@@ -80,6 +80,16 @@
                 <&macro_release &kp LALT>;
         label = "NORWEGIAN_AA";
         };
+
+        super_combo: super_combo {
+        label = "SUPER_COMBO";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings = 
+                <&macro_press &kp LCTRL &kp LSHIFT &kp LALT &kp LGUI>, 
+                <&macro_pause_for_release>, 
+                <&macro_release &kp LCTRL &kp LSHIFT &kp LALT &kp LGUI>;
+        };
     };
 
         keymap {
@@ -131,7 +141,7 @@ label= "NAVI"                              ;
                 &none      &none        &none       &none      &none           &none       &none       &kp UP      &none       &none
                 &kp LCTRL  &kp LALT     &kp LSHIFT  &kp LGUI   &none           &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none
     &none       &none      &none        &none       &none      &none           &none       &none       &none       &none       &none        &none      
-                                        &none       &kp (LGUI | LSHIFT | LALT | LCTRL)  &none       &none       &none       &none      
+                                        &none       &super_combo  &none       &none       &none       &none      
                         >;
                 };
 
