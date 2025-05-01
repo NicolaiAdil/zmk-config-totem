@@ -14,6 +14,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "keys_no.h
 
 #define BASE 0
 #define NAV  1
@@ -60,48 +61,6 @@
                 <&kp LSHFT>;
         };
 
-        ae_char: ae_char {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT &kp LSHFT>,
-                <&macro_tap>,
-                <&kp A>,
-                <&macro_release>,
-                <&kp LSHFT &kp LALT>;
-
-            label = "NORWEGIAN_AE";
-        };
-
-        oe_char: oe_char {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp O>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "NORWEGIAN_OE";
-        };
-
-        aa_char: aa_char {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp A>,
-                <&macro_release>,
-                <&kp LALT>;
-
-            label = "NORWEGIAN_AA";
-        };
-
         super_combo: super_combo {
             label = "SUPER_COMBO";
             compatible = "zmk,behavior-macro";
@@ -138,8 +97,8 @@
 
             bindings = <
                 &kp Q        &kp W       &kp E        &kp R         &kp T            &kp Y         &kp U       &kp I         &kp O       &kp P
-                &mt LCTRL A  &mt LALT S  &mt LSHFT D  &mt LGUI F    &kp G            &kp H         &mt RGUI J  &mt RSHIFT K  &mt RALT L  &aa_char
-&studio_unlock  &kp Z        &kp X       &kp C        &kp V         &kp B            &kp N         &kp M       &kp COMMA     &kp DOT     &oe_char  &ae_char
+                &mt LCTRL A  &mt LALT S  &mt LSHFT D  &mt LGUI F    &kp G            &kp H         &mt RGUI J  &mt RSHIFT K  &mt RALT L  &NO_AA
+&studio_unlock  &kp Z        &kp X       &kp C        &kp V         &kp B            &kp N         &kp M       &kp COMMA     &kp DOT     &NO_OE  &NO_AE
                                          &kp DEL      &mt LGUI TAB  &lt SYM SPACE    &lt NAV BSPC  &kp ENTER   &kp BSPC
             >;
         };
