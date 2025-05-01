@@ -97,8 +97,8 @@
 
             bindings = <
                 &kp Q        &kp W       &kp E        &kp R         &kp T            &kp Y         &kp U       &kp I         &kp O       &kp P
-                &mt LCTRL A  &mt LALT S  &mt LSHFT D  &mt LGUI F    &kp G            &kp H         &mt RGUI J  &mt RSHIFT K  &mt RALT L  &NO_AA
-&studio_unlock  &kp Z        &kp X       &kp C        &kp V         &kp B            &kp N         &kp M       &kp COMMA     &kp DOT     &NO_OE  &NO_AE
+                &mt LCTRL A  &mt LALT S  &mt LSHFT D  &mt LGUI F    &kp G            &kp H         &mt RGUI J  &mt RSHIFT K  &mt RALT L  &kp NO_AA
+&studio_unlock  &kp Z        &kp X       &kp C        &kp V         &kp B            &kp N         &kp M       &kp COMMA     &kp DOT     &kp NO_OE  &kp NO_AE
                                          &kp DEL      &mt LGUI TAB  &lt SYM SPACE    &lt NAV BSPC  &kp ENTER   &kp BSPC
             >;
         };
