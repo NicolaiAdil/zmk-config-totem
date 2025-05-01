@@ -150,7 +150,7 @@
             bindings = <
         &kp BSLH  &kp LT     &kp GT     &underscore  &kp PIPE     &kp KP_EQUAL  &kp LBRC  &kp RBRC  &kp AMPS   &kp TILDE2
         &kp DQT   &kp SQT    &kp SEMI   &kp COLON    &kp FSLH     &kp KP_PLUS   &kp LPAR  &kp RPAR  &kp QMARK  &kp AT_SIGN
-&trans  &trans    &kp GRAVE  &kp PRCNT  &kp HASH     &kp ASTRK    &kp KP_MINUS  &kp LBKT  &kp RBKT  &kp EXCL   &kp DLLR     &ae_char
+&trans  &trans    &kp GRAVE  &kp PRCNT  &kp HASH     &kp ASTRK    &kp KP_MINUS  &kp LBKT  &kp RBKT  &kp EXCL   &kp DLLR     &trans
                              &trans     &trans       &trans       &trans        &trans    &trans
             >;
         };
