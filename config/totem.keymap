@@ -10,11 +10,11 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#include "keys_nb.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "keys_nb.h"
 
 #define BASE 0
 #define NAV  1
@@ -148,10 +148,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp BSLH  &kp LT     &kp GT     &underscore  &kp PIPE     &kp KP_EQUAL  &kp LBRC  &kp RBRC  &kp AMPS   &kp TILDE2
-        &kp DQT   &kp SQT    &kp SEMI   &kp COLON    &kp FSLH     &kp KP_PLUS   &kp LPAR  &kp RPAR  &kp QMARK  &kp AT_SIGN
-&trans  &trans    &kp GRAVE  &kp PRCNT  &kp HASH     &kp ASTRK    &kp KP_MINUS  &kp LBKT  &kp RBKT  &kp EXCL   &kp DLLR     &trans
-                             &trans     &trans       &trans       &trans        &trans    &trans
+        &kp BSLH  &kp LT     &kp GT     &underscore  &kp PIPE     &kp KP_EQUAL  &kp NB_LEFT_BRACE        &kp NB_RIGHT_BRACE        &kp AMPS   &kp TILDE2
+        &kp DQT   &kp SQT    &kp SEMI   &kp COLON    &kp FSLH     &kp KP_PLUS   &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp QMARK  &kp AT_SIGN
+&trans  &trans    &kp GRAVE  &kp PRCNT  &kp HASH     &kp ASTRK    &kp KP_MINUS  &kp NB_LEFT_BRACKET      &kp NB_RIGHT_BRACKET      &kp EXCL   &kp DLLR     &trans
+                             &trans     &trans       &trans       &trans        &trans                   &trans
             >;
         };
 
