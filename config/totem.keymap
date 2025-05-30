@@ -104,10 +104,10 @@
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        nav_layer {
+        movement {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "NAV";
+            label = "movement";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -121,19 +121,19 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &none      &none     &none       &none         &none    &none     &none     &kp UP    &none      &none
-       &kp LCTRL  &kp LALT  &kp LSHIFT  &kp LGUI      &none    &kp PLUS  &kp LEFT  &kp DOWN  &kp RIGHT  &none
-&none  &none      &none     &none       &none         &none    &none     &none     &none     &none      &none  &none
-                            &none       &super_combo  &none    &none     &none     &none
+       &none                          &none                  &none                      &none                          &none      &none         &kp HOME  &kp UP    &kp END    &none
+       &mt LEFT_CONTROL LEFT_CONTROL  &mt LEFT_ALT LEFT_ALT  &mt LEFT_SHIFT LEFT_SHIFT  &mt LEFT_COMMAND LEFT_COMMAND  &kp ESC    &kp NB_PLUS   &kp LEFT  &kp DOWN  &kp RIGHT  &none
+&none  &none                          &none                  &none                      &none                          &none      &kp NB_MINUS  &none     &none     &none      &none  &none
+                                                             &none                      &kp LS(LC(LG(LEFT_ALT)))       &none      &none         &none     &none
             >;
         };
 
         // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-        sym_layer {
+        Symbols {
             // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 
-            label = "SYM";
+            label = "symbols";
 
             // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
             //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
@@ -147,10 +147,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp BSLH  &kp LT     &kp GT     &underscore  &kp PIPE     &kp KP_EQUAL  &kp NB_LEFT_BRACE        &kp NB_RIGHT_BRACE        &kp AMPS   &kp TILDE2
-        &kp DQT   &kp SQT    &kp SEMI   &kp COLON    &kp FSLH     &kp KP_PLUS   &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp QMARK  &kp AT_SIGN
-&trans  &trans    &kp GRAVE  &kp PRCNT  &kp HASH     &kp ASTRK    &kp KP_MINUS  &kp NB_LEFT_BRACKET      &kp NB_RIGHT_BRACKET      &kp EXCL   &kp DLLR     &trans
-                             &trans     &trans       &trans       &trans        &trans                   &trans
+        &kp NB_DOLLAR         &kp NB_LESS_THAN         &kp NB_GREATER_THAN  &kp NB_UNDERSCORE  &kp NB_PIPE        &kp KP_EQUAL  &kp NB_LEFT_BRACE        &kp NB_RIGHT_BRACE        &kp AMPS   &kp TILDE2
+        &kp NB_DOUBLE_QUOTES  &kp LA(NB_SINGLE_QUOTE)  &kp NB_SEMICOLON     &kp NB_COLON       &kp NB_SLASH       &kp KP_PLUS   &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp QMARK  &kp AT_SIGN
+&trans  &trans                &none                    &kp PRCNT            &kp NB_HASH        &kp NB_ASTERISK    &kp KP_MINUS  &kp NB_LEFT_BRACKET      &kp NB_RIGHT_BRACKET      &kp EXCL   &kp DLLR     &trans
+                                                       &trans               &trans             &trans             &trans        &trans                   &trans
             >;
         };
 
