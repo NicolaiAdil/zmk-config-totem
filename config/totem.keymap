@@ -175,5 +175,14 @@
                                                          &none          &none          &none                &none  &none  &none
             >;
         };
+
+        IDE {
+            bindings = <
+       &none  &none  &none  &none  &none    &kp LS(LA(LC(LG(F3))))  &none                      &kp RG(NB_W)     &none                      &none
+       &none  &none  &none  &none  &none    &kp LS(LA(LC(LG(F1))))  &kp RS(RA(RC(RG(NB_N5))))  &kp RC(NB_PLUS)  &kp RS(RA(RC(RG(NB_N6))))  &none
+&none  &none  &none  &none  &none  &none    &kp LS(LA(LC(LG(F2))))  &none                      &none            &none                      &none  &none
+                     &none  &none  &none    &none                   &none                      &none
+            >;
+        };
     };
 };
