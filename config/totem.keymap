@@ -184,5 +184,14 @@
                      &none  &none  &none    &none                   &none                      &none
             >;
         };
+
+        Nums {
+            bindings = <
+       &none  &none  &none  &none  &none    &none      &kp NB_N1  &kp NB_N2  &kp NB_N3  &none
+       &none  &none  &none  &none  &none    &kp NB_N0  &kp NB_N4  &kp NB_N5  &kp NB_N6  &none
+&none  &none  &none  &none  &none  &none    &none      &kp NB_N7  &kp NB_N8  &kp NB_N9  &none  &none
+                     &none  &none  &none    &none      &none      &none
+            >;
+        };
     };
 };
