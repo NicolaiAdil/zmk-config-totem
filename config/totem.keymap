@@ -17,7 +17,6 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 900
-
 #define BASE 0
 #define NAV  1
 #define SYM  2
@@ -80,6 +79,9 @@
                 <&macro_release>,
                 <&kp LCTRL &kp LSHIFT &kp LALT &kp LGUI>;
         };
+    };
+
+    behaviors {
     };
 
     keymap {
@@ -156,10 +158,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp NB_DOLLAR         &kp NB_LESS_THAN         &kp NB_GREATER_THAN  &kp NB_UNDERSCORE  &kp NB_PIPE        &kp NB_AMPERSAND    &kp LA(LS(NB_N8))        &kp LA(LS(NB_N9))         &kp NB_EQUAL  &none
-       &kp NB_DOUBLE_QUOTES  &kp LA(NB_SINGLE_QUOTE)  &kp NB_SEMICOLON     &kp NB_COLON       &kp NB_SLASH       &kp NB_QUESTION     &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp NB_PLUS   &none
-&none  &none                 &none                    &kp PRCNT            &kp NB_HASH        &kp NB_ASTERISK    &kp NB_EXCLAMATION  &kp NB_LEFT_BRACKET      &kp NB_RIGHT_BRACKET      &kp NB_MINUS  &none  &none
-                                                      &none                &none              &none              &mo 7               &none                    &none
+        &kp NB_DOLLAR         &kp NB_LESS_THAN  &kp NB_GREATER_THAN  &kp NB_UNDERSCORE  &kp NB_PIPE        &kp NB_AMPERSAND    &kp LA(LS(NB_N8))        &kp LA(LS(NB_N9))         &kp NB_EQUAL  &none
+        &kp NB_DOUBLE_QUOTES  &kp NB_SQT        &kp NB_SEMICOLON     &kp NB_COLON       &kp NB_SLASH       &kp NB_QUESTION     &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp NB_PLUS   &kp NUBS
+&kp AT  &none                 &none             &kp PRCNT            &kp NB_HASH        &kp NB_ASTERISK    &kp NB_EXCLAMATION  &kp NB_LEFT_BRACKET      &kp NB_RIGHT_BRACKET      &kp NB_MINUS  &none     &none
+                                                &none                &none              &none              &mo 7               &none                    &none
             >;
         };
 
