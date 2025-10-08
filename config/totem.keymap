@@ -171,10 +171,10 @@
 
         misc {
             bindings = <
-        &trans  &bt BT_CLR_ALL  &trans  &bt BT_PRV  &bt BT_NXT    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans          &trans  &trans      &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans          &trans  &trans      &trans        &trans  &trans  &trans  &trans  &trans  &trans
-                                &trans  &trans      &trans        &trans  &trans  &trans
+        &trans  &bt BT_CLR_ALL  &trans  &bt BT_PRV  &bt BT_NXT    &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
+        &trans  &trans          &trans  &trans      &trans        &trans  &trans      &trans             &trans           &trans
+&trans  &trans  &trans          &trans  &trans      &trans        &trans  &trans      &trans             &trans           &trans  &trans
+                                &trans  &trans      &trans        &trans  &trans      &trans
             >;
         };
 
