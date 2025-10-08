@@ -189,10 +189,10 @@
 
         Regolith {
             bindings = <
-       &none           &none           &kp UP        &none      &none    &none          &kp NB_N1  &kp NB_N2  &kp NB_N3  &none
-       &kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &none    &kp NB_N0      &kp NB_N4  &kp NB_N5  &kp NB_N6  &none
-&none  &kp LCTRL       &kp LEFT_ALT    &none         &none      &none    &none          &kp NB_N7  &kp NB_N8  &kp NB_N9  &none  &none
-                                       &kp LEFT_GUI  &none      &none    &kp BACKSPACE  &kp ENTER  &none
+       &none               &none               &kp LG(UP)    &none          &none    &none              &kp LG(NB_N1)  &kp LG(NB_N2)  &kp LG(NB_N3)  &none
+       &kp LG(LEFT_SHIFT)  &kp LG(LEFT_ARROW)  &kp LG(DOWN)  &kp LG(RIGHT)  &none    &kp LG(NB_N0)      &kp LG(NB_N4)  &kp LG(NB_N5)  &kp LG(NB_N6)  &none
+&none  &kp LG(LCTRL)       &kp LG(LEFT_ALT)    &none         &none          &none    &none              &kp LG(NB_N7)  &kp LG(NB_N8)  &kp LG(NB_N9)  &none  &none
+                                               &none         &none          &none    &kp LG(BACKSPACE)  &kp LG(ENTER)  &none
             >;
         };
 
