@@ -173,7 +173,7 @@
             bindings = <
         &trans  &bt BT_CLR_ALL  &trans  &bt BT_PRV  &bt BT_NXT    &trans  &kp K_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &trans
         &trans  &trans          &trans  &trans      &trans        &trans  &trans      &trans             &trans           &trans
-&trans  &trans  &trans          &trans  &trans      &trans        &trans  &trans      &trans             &trans           &trans  &trans
+&trans  &trans  &trans          &trans  &trans      &trans        &trans  &trans      &trans             &trans           &trans  &to 9
                                 &trans  &trans      &trans        &trans  &trans      &trans
             >;
         };
@@ -220,6 +220,24 @@
         &trans  &trans  &trans  &trans  &trans    &trans  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans          &trans           &trans  &trans
                         &trans  &trans  &trans    &trans  &trans          &trans
+            >;
+        };
+
+        LoL {
+            bindings = <
+           &kp TAB  &kp N1  &kp NUMBER_2  &kp NUMBER_3  &kp T        &trans  &trans  &trans  &trans  &trans
+           &kp A    &kp Q   &kp W         &kp E         &kp R        &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp G    &kp V   &kp S         &kp D         &kp F        &trans  &trans  &trans  &trans  &trans  &to 0
+                            &kp LEFT_GUI  &lt 10 B      &kp SPACE    &trans  &trans  &trans
+            >;
+        };
+
+        fn_keys {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &kp F1  &kp F2  &kp F3  &kp F4  &kp F5    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
