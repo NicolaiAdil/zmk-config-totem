@@ -158,9 +158,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                &kp NB_DOLLAR               &kp NB_LESS_THAN     &kp NB_GREATER_THAN  &kp NB_UNDERSCORE  &kp NB_PIPE        &kp NB_AMPERSAND    &kp NB_LEFT_BRACE        &kp NB_RIGHT_BRACE        &kp NB_EQUAL  &none
+                &kp NB_DOLLAR               &kp NB_LESS_THAN     &kp NB_GREATER_THAN  &kp NB_UNDERSCORE  &kp NB_PIPE        &kp NB_AMPERSAND    &kp NB_LBRC              &kp NB_RBRC               &kp NB_EQUAL  &none
                 &mt LCTRL NB_DOUBLE_QUOTES  &mt LEFT_ALT NB_SQT  &kp NB_SEMICOLON     &kp NB_COLON       &kp NB_SLASH       &kp NB_QUESTION     &kp NB_LEFT_PARENTHESIS  &kp NB_RIGHT_PARENTHESIS  &kp NB_PLUS   &kp NB_BSLH
-&kp NB_AT_SIGN  &kp CARET                   &none                &kp PRCNT            &kp NB_HASH        &kp NB_ASTERISK    &kp NB_EXCLAMATION  &kp NB_LEFT_BRACKET      &kp NB_RIGHT_BRACKET      &kp NB_MINUS  &none        &kp TILDE
+&kp NB_AT_SIGN  &kp CARET                   &none                &kp PRCNT            &kp NB_HASH        &kp NB_ASTERISK    &kp NB_EXCLAMATION  &kp NB_LEFT_BRACKET      &kp NB_RIGHT_BRACKET      &kp NB_MINUS  &none        &kp NB_TILDE
                                                                  &none                &none              &none              &mo 7               &trans                   &none
             >;
         };
